@@ -13,7 +13,12 @@ function App() {
     // console.log("clicked", counter);
 
     // counter = counter + 1
-    setCounter(counter + 1)
+    setCounter(previousCounter => previousCounter + 1)
+    setCounter(counter => counter + 1)
+
+
+
+
   }
 
 
